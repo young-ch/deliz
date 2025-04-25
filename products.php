@@ -310,24 +310,26 @@ require_once 'includes/header.php';
         </div>
         <?php else: ?>
             <?php foreach ($current_products as $product): ?>
-            <div class="product-card" data-aos="fade-up">
                 <?php if (!empty($product['link'])): ?>
-                <a href="<?php echo htmlspecialchars($product['link']); ?>" class="product-link">
+                    <a href="<?php echo $product['link']; ?>" class="product-link" target="_blank" rel="noopener noreferrer">
+                <?php else: ?>
+                    <div class="product-link">
                 <?php endif; ?>
-                    <div class="product-image-wrapper">
-                        <img src="<?php echo htmlspecialchars($product['image']); ?>" 
-                             alt="<?php echo htmlspecialchars($product['name']); ?>" 
-                             class="product-image">
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category"><?php echo htmlspecialchars($product['category']); ?></div>
-                        <h3 class="product-name"><?php echo htmlspecialchars($product['name']); ?></h3>
-                        <p class="product-description"><?php echo htmlspecialchars($product['description']); ?></p>
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category"><?php echo $product['category']; ?></div>
+                            <h3 class="product-name"><?php echo $product['name']; ?></h3>
+                            <p class="product-description"><?php echo $product['description']; ?></p>
+                        </div>
                     </div>
                 <?php if (!empty($product['link'])): ?>
-                </a>
+                    </a>
+                <?php else: ?>
+                    </div>
                 <?php endif; ?>
-            </div>
             <?php endforeach; ?>
         <?php endif; ?>
     </div>

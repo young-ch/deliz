@@ -1,6 +1,44 @@
 <?php
 $page_title = '문의하기';
 $current_page = 'contact';
+
+// 폼 제출 처리
+$message_sent = true;
+$error_message = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
+    $email = isset($_POST['email']) ? filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL) : '';
+    $subject = isset($_POST['subject']) ? strip_tags(trim($_POST['subject'])) : '';
+    $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
+
+    // 유효성 검사
+    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+        $error_message = '모든 필드를 채워주세요.';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error_message = '유효한 이메일 주소를 입력해주세요.';
+    } else {
+        // 이메일 내용 구성
+       // $to = 'delizco@deliz.co.kr';
+        $to = 'godsky1990@naver.com';
+        $email_subject = "[웹사이트 문의] " . $subject;
+        $email_body = "이름: $name\n";
+        $email_body .= "이메일: $email\n\n";
+        $email_body .= "문의내용:\n$message\n";
+        
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion();
+
+        // 이메일 전송
+        if (mail($to, $email_subject, $email_body, $headers)) {
+            $message_sent = true;
+        } else {
+            $error_message = '메일 전송에 실패했습니다. 잠시 후 다시 시도해주세요.';
+        }
+    }
+}
+
 require_once 'includes/header.php';
 ?>
 
@@ -142,6 +180,25 @@ require_once 'includes/header.php';
             font-size: 1rem;
         }
     }
+
+    .alert {
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    .alert-error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
 </style>
 
 <main class="main-content">
@@ -193,24 +250,38 @@ require_once 'includes/header.php';
         </div>
 
         <div class="contact-form">
-            <form action="#" method="POST">
+            <?php if ($message_sent): ?>
+                <div class="alert alert-success">
+                    문의가 성공적으로 전송되었습니다. 빠른 시일 내에 답변 드리도록 하겠습니다.
+                </div>
+            <?php endif; ?>
+            
+            <?php if ($error_message): ?>
+                <div class="alert alert-error">
+                    <?php echo $error_message; ?>
+                </div>
+            <?php endif; ?>
+
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                 <div class="form-group">
-                    <label for="name">이름</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">이름 *</label>
+                    <input type="text" id="name" name="name" required value="<?php echo isset($_POST['name']) ? htmlspecialchars($_POST['name']) : ''; ?>">
                 </div>
                 <div class="form-group">
-                    <label for="email">이메일</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">이메일 *</label>
+                    <input type="email" id="email" name="email" required value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
                 </div>
                 <div class="form-group">
-                    <label for="subject">제목</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">제목 *</label>
+                    <input type="text" id="subject" name="subject" required value="<?php echo isset($_POST['subject']) ? htmlspecialchars($_POST['subject']) : ''; ?>">
                 </div>
                 <div class="form-group">
-                    <label for="message">문의내용</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">문의내용 *</label>
+                    <textarea id="message" name="message" required><?php echo isset($_POST['message']) ? htmlspecialchars($_POST['message']) : ''; ?></textarea>
                 </div>
-                <button type="submit" class="submit-btn">보내기</button>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> 보내기
+                </button>
             </form>
         </div>
     </div>

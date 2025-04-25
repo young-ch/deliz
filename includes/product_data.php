@@ -53,7 +53,7 @@ $products = [
     [
         'name' => '족발편육',
         'description' => '교동족발편육 400g [원산지:상세설명에 표시]',
-        'image' => 'img/족발편육.png',
+        'image' => 'img/족발편육400g.png',
         'category' => '간식류',
         'link' => 'https://smartstore.naver.com/manitomarket/products/11516668284'
     ],
@@ -67,42 +67,42 @@ $products = [
     [
         'name' => '냉동유채채',
         'description' => '냉동유채(겨울초),중국산,3~5CM절단,1KG,PAC [원산지:중국]',
-        'image' => 'img/product-default.png',
+        'image' => 'img/냉동유채.png',
         'category' => '냉동식품',
         'link' => 'https://smartstore.naver.com/manitomarket/products/11722992320'
     ],
     [
-        'name' => '유부슬라이스스',
+        'name' => '유부슬라이스',
         'description' => '식자재왕 유부 슬라이스 1kg(냉동) [원산지:상세설명에 표시]',
-        'image' => 'img/유부슬라이스1kg.png',
+        'image' => 'img/유브슬라이스1kg.png',
         'category' => '냉동식품',
         'link' => 'https://smartstore.naver.com/manitomarket/products/11455056651'
     ],
     [
         'name' => '치킨팝',
         'description' => '한입 크기로 즐기는 치킨팝',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '간식류',
         'link' => ''
     ],
     [
         'name' => '감자튀김',
         'description' => '바삭바삭한 감자튀김',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '간식류',
         'link' => ''
     ],
     [
         'name' => '치즈볼',
         'description' => '톡톡 터지는 치즈볼',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '간식류',
         'link' => ''
     ],
     [
         'name' => '왕새우튀김',
         'description' => '큼직한 새우로 만든 튀김',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '간식류',
         'link' => ''
     ],
@@ -118,28 +118,28 @@ $products = [
     [
         'name' => '우동',
         'description' => '쫄깃한 면발의 우동',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '면류',
         'link' => ''
     ],
     [
         'name' => '짜장면',
         'description' => '춘장 맛이 일품인 짜장면',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '면류',
         'link' => ''
     ],
     [
         'name' => '짬뽕',
         'description' => '얼큰한 국물의 짬뽕',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '면류',
         'link' => ''
     ],
     [
         'name' => '라면',
         'description' => '쫄깃한 면발의 라면',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '면류',
         'link' => ''
     ],
@@ -155,63 +155,63 @@ $products = [
     [
         'name' => '참치캔',
         'description' => '신선한 참치로 만든 캔',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '고등어캔',
         'description' => '간편하게 즐기는 고등어캔',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '연어캔',
         'description' => '고소한 연어캔',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '골뱅이캔',
         'description' => '쫄깃한 골뱅이캔',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '스팸',
         'description' => '클래식한 맛의 스팸',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '카레',
         'description' => '풍부한 맛의 즉석 카레',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '짜장',
         'description' => '간편한 즉석 짜장',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '덮밥소스',
         'description' => '다양한 덮밥 요리를 위한 소스',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
     [
         'name' => '스프',
         'description' => '간편한 즉석 스프',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '가공식품',
         'link' => ''
     ],
@@ -220,35 +220,35 @@ $products = [
     [
         'name' => '냉동만두',
         'description' => '속이 가득한 냉동만두',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '냉동식품',
         'link' => ''
     ],
     [
         'name' => '냉동피자',
         'description' => '간편하게 즐기는 냉동피자',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '냉동식품',
         'link' => ''
     ],
     [
         'name' => '냉동돈까스',
         'description' => '바삭한 냉동돈까스',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '냉동식품',
         'link' => ''
     ],
     [
         'name' => '냉동치킨',
         'description' => '간편한 냉동치킨',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '냉동식품',
         'link' => ''
     ],
     [
         'name' => '냉동군만두',
         'description' => '육즙 가득한 냉동군만두',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '냉동식품',
         'link' => ''
     ],
@@ -257,35 +257,35 @@ $products = [
     [
         'name' => '즉석밥',
         'description' => '간편한 즉석밥',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '즉석식품',
         'link' => ''
     ],
     [
         'name' => '컵밥',
         'description' => '다양한 맛의 컵밥',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '즉석식품',
         'link' => ''
     ],
     [
         'name' => '삼각김밥',
         'description' => '간편하게 즐기는 삼각김밥',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '즉석식품',
         'link' => ''
     ],
     [
         'name' => '도시락',
         'description' => '다양한 반찬의 도시락',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '즉석식품',
         'link' => ''
     ],
     [
         'name' => '샌드위치',
         'description' => '신선한 재료의 샌드위치',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '즉석식품',
         'link' => ''
     ],
@@ -294,35 +294,35 @@ $products = [
     [
         'name' => '탄산음료',
         'description' => '시원한 탄산음료',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '음료',
         'link' => ''
     ],
     [
         'name' => '과일주스',
         'description' => '신선한 과일주스',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '음료',
         'link' => ''
     ],
     [
         'name' => '이온음료',
         'description' => '갈증해소 이온음료',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '음료',
         'link' => ''
     ],
     [
         'name' => '커피',
         'description' => '향긋한 커피',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '음료',
         'link' => ''
     ],
     [
         'name' => '차',
         'description' => '향긋한 차',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '음료',
         'link' => ''
     ],
@@ -338,28 +338,28 @@ $products = [
     [
         'name' => '과자세트',
         'description' => '다양한 과자 모음',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '과자/빵',
         'link' => ''
     ],
     [
         'name' => '초콜릿',
         'description' => '달콤한 초콜릿',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '과자/빵',
         'link' => ''
     ],
     [
         'name' => '젤리',
         'description' => '쫄깃한 젤리',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '과자/빵',
         'link' => ''
     ],
     [
         'name' => '빵',
         'description' => '신선한 빵',
-        'image' => 'img/product-default.png',
+        'image' => 'img/deliz.png',
         'category' => '과자/빵',
         'link' => ''
     ]

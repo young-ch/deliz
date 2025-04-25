@@ -145,63 +145,56 @@ require_once 'includes/header.php';
 
     <section class="timeline">
         <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+                <h3>다양한 상품소싱 준비</h3>
+                <p>구운야채 상품소싱 출시예정</p>
+                <p>(구운 냉동버섯, 구운 냉동야채, 자숙대두 등)</p>
+                <p>연두부튀김 상품소싱 출시예정</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
             <div class="timeline-year">2023</div>
             <div class="timeline-content">
-                <h3>글로벌 확장</h3>
-                <p>동남아시아 시장 진출</p>
-                <p>스마트 물류센터 구축 완료</p>
+                <h3>사업 확장</h3>
+                <p>풀무원푸드머스 거래 개시</p>
+                <p>롯데리아 니트릴장갑 납품 계약</p>
+                <p>Cj프레시웨이, 현대그린푸드, 푸디스트 거래 개시</p>
+                <p>아만인터네셔널 분할 델리즈 / 아만인터네셔널</p>
             </div>
         </div>
 
         <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-year">2020</div>
+            <div class="timeline-year">2022</div>
             <div class="timeline-content">
-                <h3>디지털 혁신</h3>
-                <p>온라인 직거래 플랫폼 출시</p>
-                <p>AI 기반 품질관리 시스템 도입</p>
+                <p>중국산 감자 튀김 4종 소싱(크링클컷, 레귤러컷, 슈스트링, 웨지)</p>
+                <p>교촌/BHC/BBQ/롯데리아/아웃백 감자 튀김 납품 계약 및 진행</p>
+                <p>중국산 스위트 콘 소싱 개시</p>
+                <p>베트남산 새우 튀김류 소싱 개시</p>
+
             </div>
         </div>
 
         <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-year">2015</div>
+            <div class="timeline-year">2021</div>
             <div class="timeline-content">
-                <h3>품질 혁신</h3>
-                <p>ISO 22000 인증 획득</p>
-                <p>중앙물류센터 확장</p>
+                <h3>거래 개시</h3>
+                <p>2021년 동원홈푸드, 삼성웰스토리 거래 개시시</p>
             </div>
         </div>
 
         <div class="timeline-item" data-aos="fade-up">
-            <div class="timeline-year">2010</div>
+            <div class="timeline-year">2021 이전</div>
             <div class="timeline-content">
                 <h3>회사 설립</h3>
-                <p>Deliz 설립</p>
-                <p>신선식품 수입 사업 시작</p>
+                <p>2020년 주식회사 아만이터네셔널 설립</p>
+                <p>2020년 식품 수입 개시(당면, 튀긴 마늘 슬라이스 등 수입 개시)</p>
             </div>
         </div>
     </section>
 
-    <section class="achievement-section" data-aos="fade-up">
-        <h2 style="text-align: center; margin-bottom: 2rem;">우리의 성과</h2>
-        <div class="achievement-grid">
-            <div class="achievement-card">
-                <div class="achievement-number">13</div>
-                <p>해외 직거래 산지</p>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-number">1,000+</div>
-                <p>협력 매장</p>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-number">98%</div>
-                <p>고객 만족도</p>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-number">24/7</div>
-                <p>품질관리</p>
-            </div>
-        </div>
-    </section>
+    
 </main>
 
 <?php
